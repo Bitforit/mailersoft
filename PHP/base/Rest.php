@@ -1,8 +1,10 @@
 <?php
 	
-	require_once dirname(__FILE__).'/ML_Rest_Base.php';
+	namespace MailerLite\Base;
+
+	use MailerLite\Base\Base;
 	
-	class ML_Rest extends ML_Rest_Base
+	class Rest extends Base
 	{
 		var $name = '';
 

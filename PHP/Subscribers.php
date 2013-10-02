@@ -1,8 +1,10 @@
 <?php
 	
-	require_once dirname(__FILE__).'/ML_Rest.php';
+	namespace MailerLite;
+
+	use MailerLite\Base\Rest;
 	
-	class Subscribers extends ML_Rest
+	class Subscribers extends Rest
 	{
 		function Subscribers( $api_key )
 		{	

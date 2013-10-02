@@ -1,6 +1,8 @@
 <?php
 	
-	require_once dirname(__FILE__).'/base/ML_Rest.php';
+	namespace MailerLite;
+
+	use MailerLite\Base\Rest;
 	
 	class Campaigns extends Rest
 	{
