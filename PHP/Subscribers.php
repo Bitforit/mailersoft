@@ -2,9 +2,9 @@
 	
 	require_once dirname(__FILE__).'/ML_Rest.php';
 	
-	class ML_Subscribers extends ML_Rest
+	class Subscribers extends ML_Rest
 	{
-		function ML_Subscribers( $api_key )
+		function Subscribers( $api_key )
 		{	
 			$this->name = 'subscribers';
 
