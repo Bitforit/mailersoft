@@ -1,6 +1,6 @@
 <?php
 
-require_once dirname(__FILE__).'/ML_Rest.php';
+require_once dirname(__FILE__).'/base/ML_Rest.php';
 
 class ML_Campaigns extends ML_Rest
 {
