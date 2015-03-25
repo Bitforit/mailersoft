@@ -174,6 +174,7 @@
 
 			if ( !empty( $this->batchRecipients ) ) {
 				$data['batch'] = $this->batchRecipients;
+				$data['tag'] = $this->tag;
 			} else {
 				$data['recipientName'] = $this->recipientName;
 				$data['recipientEmail'] = $this->recipientEmail;
