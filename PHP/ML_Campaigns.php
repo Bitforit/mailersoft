@@ -58,11 +58,25 @@ class ML_Campaigns extends ML_Rest
 
     function getOpens( $data = null )
     {
+        foreach (array('tag') as $param)
+        {
+            if (empty($data[$param]) && !empty($this->{$param}))
+            {
+                $data[$param] = $this->{$param};
+            }
+        }
         return $this->execute( 'GET', $data, 'opens' );
     }
 
     function getClicks( $data = null )
     {
+        foreach (array('tag') as $param)
+        {
+            if (empty($data[$param]) && !empty($this->{$param}))
+            {
+                $data[$param] = $this->{$param};
+            }
+        }
         return $this->execute( 'GET', $data, 'clicks' );
     }
 
