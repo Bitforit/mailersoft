@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ML
 {
-    class ML_Messages : ML_Rest
+    public class ML_Messages : ML_Rest
     {
 
         private string recipientEmail, recipientName, emailFrom, nameFrom, type, language, replyEmail, replyName;

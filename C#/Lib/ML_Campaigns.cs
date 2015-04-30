@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ML
 {
-    class ML_Campaigns : ML_Rest
+    public class ML_Campaigns : ML_Rest
     {
 
         public ML_Campaigns(string apiKey)

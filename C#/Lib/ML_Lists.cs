@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ML
 {
-    class ML_Lists : ML_Rest
+    public class ML_Lists : ML_Rest
     {
         public ML_Lists(string apiKey)
             : base(apiKey)

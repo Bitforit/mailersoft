@@ -12,7 +12,7 @@ namespace ML
      * Workload: 559 minutes
      *   Learnt: Better recursion skills, better C# knowledge, better understanding of basic principles in programming languages.
      */
-    class ML_Rest_Base
+    public class ML_Rest_Base
     {
 
         protected string url;
