@@ -5,6 +5,7 @@ using System.Text;
 using System.Net;
 using System.IO;
 using System.Web.Script.Serialization;
+using System.Diagnostics;
 
 namespace ML
 {
@@ -49,7 +50,7 @@ namespace ML
             Stream objStream;
             HttpWebResponse wResp;
             this.url += (this.action != "" ? this.action + "/" : "") + (this.id > 0 ? this.id.ToString() + "/" : "") + (action != "" ? action + "/" : "");
-            Console.WriteLine(this.url);
+            Debug.Print(this.url);
             if (data != null)
             {
                 foreach (KeyValuePair<string, object> entry in data)
@@ -145,7 +146,7 @@ namespace ML
             byte[] data;
 
             stream = this.BuildStream();
-            Console.WriteLine(stream);
+            Debug.Print(stream);
             this.url += "?apiKey=" + this.apiKey;
 
             switch (this.method)
@@ -153,7 +154,7 @@ namespace ML
                 case "GET":
                 case "DELETE":
                     this.url += stream != "" ? "&" + stream : "";
-                    Console.Write(this.url);
+                    Debug.Print(this.url);
                     connection = WebRequest.Create(this.url);
                     connection.Method = this.method;
                     break;

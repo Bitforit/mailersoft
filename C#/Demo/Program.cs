@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using ML;
+using System.Diagnostics;
 
 namespace Demo
 {
@@ -10,6 +11,9 @@ namespace Demo
     {
         static void Main(string[] args)
         {
+            TextWriterTraceListener stdoutTrace = new TextWriterTraceListener(System.Console.Out);
+            Debug.Listeners.Add(stdoutTrace);
+
             // Campaign: 30011384
             // List: 2009372 - for ML_Lists test; 2012541 - for subscribers
             ML_Messages mlMessages = new ML_Messages("w7k1h3q4l6c3o3e7l4v6a1l4t8q6c6d9");
