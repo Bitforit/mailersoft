@@ -1,6 +1,8 @@
 <?php
 
-class ML_Rest_Base
+namespace MailerLite\Base;
+
+class Base
 {
     protected $url;
     protected $verb;
