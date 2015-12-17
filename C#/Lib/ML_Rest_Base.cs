@@ -79,6 +79,9 @@ namespace ML
                     this.response += reader.ReadToEnd();
             }
 
+            if (!String.IsNullOrEmpty(this.response))
+                Debug.Print(this.response);
+
             this.responseObject = (new JavaScriptSerializer()).DeserializeObject(this.response);
             this.Flush();
 
